@@ -1,5 +1,4 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
 
 const BMICalculator = () => {
@@ -73,7 +72,12 @@ const BMICalculator = () => {
           </div>
 
           <div className="col-span-3">
-            <Button type="submit">Calculate BMI</Button>
+            <button
+              className="rounded-lg border-0 bg-foreground text-background  p-3"
+              type="submit"
+            >
+              Calculate BMI
+            </button>
           </div>
         </div>
       </form>
